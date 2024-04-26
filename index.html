@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Coding Assesment L2 boilerplate</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="product-images">
+                <!-- Product Image -->
+                <img src="" alt="Product Image" id="product-image">
+                <!-- Thumbnails -->
+                <div class="thumbnails" id="thumbnails"></div>
+            </div>
+            <div class="product-details">
+                <!-- Product Vendor -->
+                <p id="product-vendor"></p>
+                <!-- Product Title -->
+                <h1 id="product-title"></h1>
+                <hr>
+                <div class="pricedetails">
+                    <!-- Price -->
+                    <p id="price" class="price"></p>
+                    <!-- Percentage off -->
+                    <p id="percentage-off" class="percentage-off"></p>
+                </div>
+                <!-- Compare at Price -->
+                <p id="compare-at-price" class="compare-at-price"></p>
+                <hr>
+                <!-- Color Selector -->
+                <p class="headings">Choose a Color</p>
+                <div class="color-selector" id="color-selector"></div>
+                <!-- <select id="color-selector"></select> -->
+                <hr>
+                <!-- Size Selector -->
+                <p class="headings">Choose a Size</p>
+                <p class="size-selector" id="size-selector"></p>
+                <!-- <select id="size-selector"></select> -->
+                <!-- Quantity Selector -->
+                <div class="countaddtocart">
+                    <div class="counting-container">
+                        <button class="counting" id="minusButton" disabled><strong>-</strong></button>
+                        <span class="counting" id="counterValue">1</span>
+                        <button class="counting" id="counterButton"><strong>+</strong></button>
+                    </div>
+                                  
+                    <!-- <input type="number" id="quantity-selector" value="1" min="1"> -->
+                    <!-- Add to Cart Button -->
+                        <button id="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                </div>
+                <div id="add-to-cart-message"></div>
+                <hr>
+                <!-- Description -->
+                <div id="description"></div>
+                <!-- Add to Cart Message -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

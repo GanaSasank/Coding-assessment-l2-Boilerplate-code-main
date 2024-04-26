@@ -1,0 +1,308 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-images {
+  width: 40%;
+  margin-right: 20px;
+}
+
+#product-vendor{
+  color:#999;
+}
+
+hr {  
+  height: 1px;  
+  background-color:#999;  
+  border: none;  
+} 
+
+.product-details {
+  width: 60%;
+}
+
+.product-images img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.thumbnails img {
+  width: 20%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.product-details {
+  padding: 20px;
+}
+
+.product-details h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #23527c; /* Navy Blue */
+}
+
+.compare-at-price {
+  margin-top: 1px;
+  font-size: 1.5rem;
+  color: #999; /* Light grey */
+  text-decoration: line-through;
+}
+
+.percentage-off {
+  font-size: 1rem;
+  color: red; /* Red color for percentage off */
+}
+
+
+.color-selector {
+  display: flex;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.color-option {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid transparent; /* Initially transparent border */
+  transition: border-color 0.3s ease; /* Smooth transition for border color change */
+}
+
+.color-option.selected {
+  border-color: black; /* Change border color when selected */
+  border-width: 2rem;
+}
+
+
+.size-selector {
+  display: flex;
+  margin-top: 10px;
+}
+
+.size-option {
+  background-color: #f2f2f2; /* Light grey background */
+  padding: 10px; /* Add padding for better appearance */
+  margin-bottom: 5px; /* Add margin bottom to separate each option */
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+
+.size-selector input[type="radio"] {
+  background-color: lightgray;
+}
+
+.size-selector label {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+.counting-container {
+  width: 63%; /* Initial width */
+  background-color: lightgrey; /* Navy Blue */
+  color: #23527c ;
+  padding: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 20px;
+  display: flex; /* Ensure content alignment */
+  justify-content: space-around; /* Align content in the middle */
+}
+
+.counting {
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none; /* Remove default button border */
+  background-color: transparent; /* Transparent background */
+  color: #23527c; /* White text color */
+}
+
+.counting:disabled {
+  color: grey; /* Grey out the disabled button */
+  cursor: not-allowed; /* Show disabled cursor */
+}
+
+
+
+#add-to-cart-btn {
+  width: 70%; /* Initial width */
+  background-color: #23527c; /* Navy Blue */
+  color: #fff;
+  padding: 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#add-to-cart-btn:hover {
+  background-color: #001f3f; /* Darker shade of Navy Blue */
+}
+
+#add-to-cart-btn i {
+  margin-right: 10px; /* Adjust as needed */
+}
+
+
+#description {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #999; /* Light grey color */
+}
+
+
+#add-to-cart-message {
+  padding: 10px;
+  background-color: #BBD278; /* Light green background */
+  color: black; /* Black text color */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: none;
+  font-weight: bold;
+}
+
+
+.headings{
+  color: #999;
+}
+
+#countaddtocart {
+  display: flex;
+  margin-bottom: 20px; /* Add margin between the two styles */
+}
+
+.pricedetails{
+  display: flex;
+}
+
+
+/* Mobile Screen: Up to 767px */
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .product {
+    flex-direction: column; /* Stack product details below images */
+  }
+
+  .product-images {
+    width: 100%; /* Take full width on smaller screens */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .thumbnails img {
+    width: 45%; /* Adjust thumbnail size for smaller screens */
+    margin: 5px; /* Reduce margin for thumbnails */
+  }
+
+  .product-details {
+    width: 100%; /* Take full width on smaller screens */
+  }
+
+  .price {
+    font-size: 1.5rem; /* Decrease font size for smaller screens */
+  }
+
+  .compare-at-price {
+    font-size: 1rem; /* Decrease font size for smaller screens */
+  }
+
+  .percentage-off {
+    font-size: 0.8rem; /* Decrease font size for smaller screens */
+  }
+
+  .color-option {
+    width: 40px; /* Adjust color option size for smaller screens */
+    height: 40px;
+    margin-right: 5px; /* Reduce margin between color options */
+  }
+
+  .size-option {
+    width: auto; /* Let size options adjust based on content */
+  }
+}
+
+/* Tablet Screen: 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 15px; /* Adjust padding for tablets */
+  }
+}
+
+/* Desktop Screen: Above 1025px */
+@media (min-width: 1025px) {
+  .container {
+    padding: 20px; /* Default padding for desktop */
+  }
+}
+
+@media (max-width: 767px) {
+  .counting-container {
+    width: 100%; /* Take full width on smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .counting {
+    margin-left: 0.6rem; /* Decrease margin for smaller screens */
+  }
+
+  #add-to-cart-btn {
+    width: 100%; /* Take full width on smaller screens */
+    padding: 15px; /* Adjust padding for smaller screens */
+    font-size: 18px; /* Decrease font size for smaller screens */
+  }
+}
