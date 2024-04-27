@@ -138,21 +138,20 @@ hr {
   cursor: pointer;
 }
 
-
 .counting-container {
-  width: 63%; /* Initial width */
-  background-color: lightgrey; /* Navy Blue */
-  color: #23527c ;
+  width: 20rem; /* Initial width */
+  background-color: lightgrey; /* Light grey background */
+  color: #23527c; /* Navy Blue */
   padding: 20px;
   font-weight: bold;
-  border: none;
   border-radius: 30px;
   cursor: pointer;
   align-items: center;
-  margin-top: 20px;
+  margin: 20px auto; /* Center the container horizontally */
   font-size: 20px;
   display: flex; /* Ensure content alignment */
   justify-content: space-around; /* Align content in the middle */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .counting {
@@ -170,19 +169,20 @@ hr {
 }
 
 
-
 #add-to-cart-btn {
-  width: 70%; /* Initial width */
+  width: 20rem; /* Initial width */
   background-color: #23527c; /* Navy Blue */
   color: #fff;
   padding: 20px;
   border: none;
+  align-items: center;
+  display: flex;
   border-radius: 30px;
   cursor: pointer;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  justify-content:center;
+  margin: 20px auto; /* Center the button horizontally */
   font-size: 20px;
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 #add-to-cart-btn:hover {
@@ -227,14 +227,12 @@ hr {
   display: flex;
 }
 
-
 /* Mobile Screen: Up to 767px */
 @media (max-width: 767px) {
   .container {
     flex-direction: column; /* Stack elements vertically */
     padding: 10px; /* Reduce padding for smaller screens */
   }
-
   .product {
     flex-direction: column; /* Stack product details below images */
   }
@@ -294,10 +292,11 @@ hr {
   .counting-container {
     width: 100%; /* Take full width on smaller screens */
     padding: 10px; /* Adjust padding for smaller screens */
+    margin-right: 0.6rem; 
   }
 
   .counting {
-    margin-left: 0.6rem; /* Decrease margin for smaller screens */
+    margin-left: 0.6rem;/* Decrease margin for smaller screens */
   }
 
   #add-to-cart-btn {
