@@ -22,6 +22,10 @@ To view the product detail page, follow these steps:
 - Select color and size options.
 - Adjust quantity and add items to the cart.
 - Responsive design for various screen sizes.
+## Known Issue
+- Image Loading: The image URLs provided by the API are not working, which may result in images not being displayed on the product pages.
+## Workaround
+- To view the product images, you can click on the thumbnails provided. Clicking on a thumbnail will load the corresponding image into the product viewer.
 
 ## Project Structure
 
