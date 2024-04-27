@@ -133,6 +133,16 @@ minusButton.addEventListener("click", () => {
             const selectedSize = document.querySelector('input[name="size"]:checked');
             const quantity = count;
             const addToCartMessage = document.getElementById('add-to-cart-message');
+            if (!selectedColor) {
+                addToCartMessage.textContent = "Please select a color before adding to cart.";
+                addToCartMessage.style.display = 'block';
+                return; // Exit the function if color is not selected
+            }
+            if (!selectedSize) {
+                addToCartMessage.textContent = "Please select size before adding to cart.";
+                addToCartMessage.style.display = 'block';
+                return; // Exit the function if color is not selected
+            }
             addToCartMessage.style.display = 'block';
                 const message =`${quantity} ${product.title} with Color ${selectedColor} and Size ${selectedSize.value} added to cart`;
                 document.getElementById('add-to-cart-message').textContent = message;
