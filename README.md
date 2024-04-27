@@ -2,7 +2,7 @@
 
 This project is a boilerplate for a product detail page with features such as displaying product images, selecting colors and sizes, adding items to the cart, and displaying product details.
 
-## Technologies Used
+## Technologies Used Only
 
 - HTML
 - CSS
